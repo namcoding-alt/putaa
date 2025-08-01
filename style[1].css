@@ -1,0 +1,57 @@
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+.container {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.container.active {
+  display: flex;
+}
+.image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+.final-image {
+  max-width: 80%;
+  animation: zoomIn 3s infinite alternate;
+}
+.text {
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.ribbon {
+  background: pink;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.message {
+  font-size: 1.2em;
+  max-width: 600px;
+  line-height: 1.6;
+}
+.hidden {
+  display: none;
+}
+@keyframes zoomIn {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy 6th Month Anniversary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="step1">
+    <img src="images/envelope.jpg" class="image" onclick="nextStep(2)" />
+    <p class="text">Open me Deha</p>
+  </div>
+
+  <div class="container hidden" id="step2">
+    <h1>HAPPY 6TH MONTH TO US PUI PUIII 🎉</h1>
+    <button onclick="nextStep(3)">Next</button>
+  </div>
+
+  <div class="container hidden" id="step3">
+    <div class="ribbon">Kya tum sanabi paglu ho?</div>
+    <button onclick="nextStep(4)">Yes</button>
+    <button onclick="alert('No? 😢')">No</button>
+  </div>
+
+  <div class="container hidden" id="step4">
+    <div class="message">
+      Oieee Na , I love you so so much Jann. Happy 6th month To Us💘 And many more years coming to us ❤.
+      Moi vaba e nasilu mur life ot bhogowan e emaan val and the best gift dibo buli...
+      <br><br>
+      Mwauhhh Mwuahhh mere pui pui dudu phudu ke batche😚<br>
+      Ye le motka Dudu🥺😙😙😙😚😚😚
+    </div>
+    <button onclick="nextStep(5)">Next</button>
+  </div>
+
+  <div class="container hidden" id="step5">
+    <img src="images/candle.jpg" class="image" />
+    <p class="text">Blow the candle 🕯️</p>
+    <button onclick="nextStep(6)">Blow</button>
+  </div>
+
+  <div class="container hidden" id="step6">
+    <img src="images/cake.jpg" class="image" />
+    <p class="text">Cake Cutting 🎂</p>
+    <button onclick="nextStep(7)">Cut</button>
+  </div>
+
+  <div class="container hidden" id="step7">
+    <img src="images/final.jpg" class="final-image" />
+    <p class="text">Forever Together 💖</p>
+    <audio src="audio/tenekoii.mp3" autoplay loop></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
